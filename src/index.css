@@ -4,6 +4,8 @@
   --color-primary: #FFFFFF;  
   --color-secondary: #000000;  
   --color-accent: #F3A712;
+  --font-poppins: Poppins, sans-serif;
+  --color-hover:hsl(44, 95%, 40%);
 }
 
 

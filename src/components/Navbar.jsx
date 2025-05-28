@@ -15,7 +15,7 @@ const Navbar = ({sections})=> {
             
             <ul className="hidden py-2 lg:flex lg:flex-row lg:gap-4  lg:items-center ">
                 {sections.map((section,index)=>{
-                   return  <li key={index} className=""><a href="#" className='lg:hover:text-accent lg:active:text-white lg:active:bg-accent lg:active:rounded lg:active:px-1 py-2'>{section}</a></li>
+                   return  <li key={index} className=""><a href="#" className='lg:hover:text-accent lg:active:text-white lg:active:bg-accent lg:active:rounded lg:active:px-6 font-semibold py-2'>{section}</a></li>
                  })
                 }
             </ul>
