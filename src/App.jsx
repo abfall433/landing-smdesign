@@ -1,15 +1,24 @@
-import Navbar from "./components/Navbar.jsx";
-import Hero from "./components/Hero.jsx";
-import image1 from "../assets/images/P1111883.jpg"
-import image2 from "../assets/images/P1122072.jpg"
+import Navbar from "./components/elements/Navbar.jsx";
+import Hero from "./components/sections/Hero.jsx";
+import Feature from "./components/sections/feature/Feature.jsx";
+import Pricings from "./components/sections/pricing/Pricings.jsx";
+import { Testimonials } from "./components/sections/testimonials/Testimonials.jsx";
+
 function App() {
 
 
   return (
-    <div className="bg-gray-50">
+    <div className="bg-gray-50 font-poppins m-0 p-0 ">
       <Navbar sections={["Accueil","Services","A propos","Contact"]}/>
 
       <Hero />
+
+      <Feature/>
+
+      <Pricings />
+
+      <Testimonials />
+      
     </div>
   )
 }

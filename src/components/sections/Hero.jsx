@@ -1,11 +1,11 @@
-import image1 from "../assets/images/P1111883.jpg"
-import image2 from "../assets/images/P1122072.jpg"
+import image1 from "../../assets/images/P1111883.jpg"
+import image2 from "../../assets/images/P1122072.jpg"
 
 const Hero = () => {
 
     return(
-        <header className="flex flex-col items-center gap-2 px-4 lg:gap-4 lg:py-8 bg-gray-50">
-            <h1 className="text-2xl lg:text-4xl font-bold font-poppins text-center my-3">
+        <header className="flex flex-col items-center gap-2 px-4 lg:gap-4 lg:py-8 bg-primary">
+            <h1 className="text-2xl lg:text-4xl font-bold font-poppins text-center text-secondary my-3">
                 <span className="text-accent">Transfomez</span> l’<span className="text-accent">image</span> de votre restaurant en <span className="text-accent">chiffre d'affaires</span>
             </h1>
 
@@ -19,11 +19,11 @@ const Hero = () => {
                 </div>
             </div>
 
-            <p className="text-sm">Des photos alléchantes, des vidéos immersives et des menus pensés sur mesure pour attirer plus de clients… et les fidéliser. 
+            <p className="text-sm font-poppins text-gray-600">Des photos alléchantes, des vidéos immersives et des menus pensés sur mesure pour attirer plus de clients… et les fidéliser. 
                 Donnez à votre établissement l'image qu’il mérite.
             </p>
 
-            <button className="text-white text-sm bg-accent rounded px-8 py-1 font-semibold hover:bg-hover hover:cursor-pointer lg:text-base lg:px-6 lg:py-2">Commencer</button>
+            <button className="text-white text-sm bg-accent rounded-full px-8 py-1 font-semibold hover:bg-hover hover:cursor-pointer lg:text-base lg:px-6 lg:py-2">Commencer</button>
         </header>
     
     )
