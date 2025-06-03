@@ -11,7 +11,7 @@ const Navbar = ({sections})=> {
 
     return (
        <> 
-        <nav className="flex flex-row-reverse justify-between px-4 lg:px-16 lg:py-2 ">
+        <nav className="flex flex-row-reverse justify-between px-4 lg:px-16 lg:py-2 bg-primary ">
             
             <ul className="hidden py-2 lg:flex lg:flex-row lg:gap-4  lg:items-center ">
                 {sections.map((section,index)=>{

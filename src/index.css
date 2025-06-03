@@ -8,3 +8,8 @@
   --color-hover:hsl(44, 95%, 40%);
 }
 
+body {
+  background-color: #001011;
+  margin: 0;
+  padding: 0;
+}
