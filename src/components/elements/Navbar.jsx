@@ -34,10 +34,10 @@ const Navbar = ({sections})=> {
          {burgerMenuOpened && 
 
             (
-            <div className='flex flex-col items-center px-4 lg:hidden '>
-                <ul>
+            <div className='flex flex-col items-center px-8 lg:hidden bg-accent  rounded text-primary m-6    '>
+                <ul className='flex flex-col gap-4 py-4'>
                     {sections.map((section,index)=>{
-                    return  <li key={index} className=""><a href="#" className='hover:text-accent'>{section}</a></li>
+                    return  <li key={index} className=""><a href="#" className=''>{section}</a></li>
                     })
                     }
                 </ul> 

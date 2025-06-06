@@ -15,9 +15,9 @@ const Feature = () => {
         titre3:"Sur place, pour mieux valoriser vos plats"
     }
 
-    return <section className="py-16 flex flex-col gap-8 mx-auto bg-white ">
+    return <section className="py-16 flex flex-col gap-8 mx-auto bg-white lg:px-8 ">
         <h1 className="text-secondary text-2xl lg:text-4xl font-bold text-center">Mon expertise</h1>
-        <div className="flex flex-wrap gap-2 lg:flex lg:flex-nowrap lg:gap-8">
+        <div className="flex flex-wrap gap-2 lg:flex lg:flex-nowrap lg:gap-2 mb-4">
             <FeatureCard className="flex-auto " logo={Camera} titre= {titres.titre1} description={descriptions.description1}/>
             <FeatureCard className="flex-auto" logo={Handshake} titre= {titres.titre2} description={descriptions.description2}/>
             <FeatureCard className="flex-auto" logo={Map} titre= {titres.titre3} description={descriptions.description3}/>
