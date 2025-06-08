@@ -1,3 +1,4 @@
+import { AnimatedCard } from "../../shared/AnimatedCard";
 import FeatureCard from "./FeatureCard";
 import {Camera,Handshake,Map} from 'lucide-react'
 
@@ -15,14 +16,15 @@ const Feature = () => {
         titre3:"Sur place, pour mieux valoriser vos plats"
     }
 
-    return <section className="py-16 flex flex-col gap-8 mx-auto bg-white lg:px-8 ">
-        <h1 className="text-secondary text-2xl lg:text-4xl font-bold text-center">Mon expertise</h1>
-        <div className="flex flex-wrap gap-2 lg:flex lg:flex-nowrap lg:gap-2 mb-4">
-            <FeatureCard className="flex-auto " logo={Camera} titre= {titres.titre1} description={descriptions.description1}/>
-            <FeatureCard className="flex-auto" logo={Handshake} titre= {titres.titre2} description={descriptions.description2}/>
-            <FeatureCard className="flex-auto" logo={Map} titre= {titres.titre3} description={descriptions.description3}/>
-        </div>
-        
+    return <section className="flex flex-col gap-8 xl:gap-16 mb-32" id="expertise">
+        <h1 className="text-primary font-bold text-center text-2xl xl:text-4xl">Mon expertise</h1>
+             
+            <div className="flex px-8 gap-4 lg:px-16 lg:gap-4  flex-wrap lg:flex-nowrap flex-auto ">
+                <FeatureCard className="" logo={Camera} titre= {titres.titre1} description={descriptions.description1}/>
+                <FeatureCard className="" logo={Handshake} titre= {titres.titre2} description={descriptions.description2}/>
+                <FeatureCard className="" logo={Map} titre= {titres.titre3} description={descriptions.description3}/>
+            </div>
+    
         
     </section>
 }

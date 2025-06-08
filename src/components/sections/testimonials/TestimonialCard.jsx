@@ -1,7 +1,7 @@
 import { Star } from "lucide-react";
 
 export const TestimonialCard = ({logo,nomRestaurant,temoignage,date,serviceUtilise,localisation}) => {
-    return <div className="flex flex-col py-4 px-4 justify-between gap-1 bg-primary rounded-2xl ">
+    return <div className="flex flex-col py-4 px-4 justify-between gap-1 bg-primary rounded-2xl xl:min-w-[33%] min-w-[50%] ">
 
         <div className="" >
             <img src={logo} alt="Logo Restaurant" className="w-24 h-24 rounded-full"></img>

@@ -4,6 +4,7 @@
   --color-primary: #FBFBFF;  
   --color-secondary: #001011;  
   --color-accent: #F2AF29;
+  --color-boxColor:hsl(186 100% 4.7%);
   --font-poppins: Poppins, sans-serif;
   --color-hover:hsl(44, 95%, 40%);
 }
@@ -12,4 +13,8 @@ body {
   background-color: #001011;
   margin: 0;
   padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }

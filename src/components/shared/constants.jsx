@@ -122,3 +122,26 @@ export const testimonial5 = {
   nombreEtoiles: "5"
 };
 
+export const sections = [
+  {
+    name:"Accueil",
+    href:"#accueil"
+  },
+  {
+    name:"Expertise",
+    href:"#expertise"
+  },
+  {
+    name:"Tarifs",
+    href:"#tarifs"
+  },
+  {
+    name:"Temoignage",
+    href:"#temoignage"
+  },
+  {
+    name:"Contact",
+    href:"#contact"
+  },
+
+]

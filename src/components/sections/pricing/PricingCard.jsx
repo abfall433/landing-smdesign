@@ -1,17 +1,24 @@
-import { CheckCircle2, X } from "lucide-react";
+/* eslint-disable no-unused-vars */
 
+import { CheckCircle2, X } from "lucide-react";
+import { motion } from "motion/react";
 const PricingCard = ({ titre, prix, description, items }) => {
   return (
-    <div className="flex flex-col  gap-4 w-full max-w-sm mx-auto p-6 bg-primary rounded-xl py-2  shadow-lg lg:gap-6">
-      <h3 className="text-center font-semibold text-secondary text-lg sm:text-xl lg:text-2xl">
+    <motion.div 
+            initial={{ opacity: 0, y: 100 }}  
+            whileInView={{opacity:1,y:0}}
+            transition={{duration:2}}
+            viewport={{once:true}}
+            className="flex flex-col  gap-4 w-full max-w-sm  p-6 bg-boxColor rounded-xl py-2  shadow-[0_4px_20px_rgba(242,175,41,0.35)] lg:gap-6 ">
+      <h3 className="text-center font-semibold text-gray-400 text-lg sm:text-xl lg:text-2xl">
         {titre}
       </h3>
 
-      <p className="text-center  font-thin text-sm sm:text-base text-gray-600">
+      <p className="text-center  font-thin text-sm sm:text-base text-gray-400">
         {description}
       </p>
 
-      <h2 className="text-center font-bold text-3xl sm:text-4xl text-secondary">
+      <h2 className="text-center font-bold text-3xl sm:text-4xl text-gray-300">
         {titre == "Sur mesure" ? (
           <>{prix}
           </>
@@ -19,7 +26,7 @@ const PricingCard = ({ titre, prix, description, items }) => {
          ) : (
           <>
           {prix}
-        <span className="font-normal text-sm sm:text-base text-gray-600"> €/ mois</span>
+        <span className="font-normal text-sm sm:text-base text-gray-400"> €/ mois</span>
          </>)}
 
       </h2>
@@ -32,7 +39,7 @@ const PricingCard = ({ titre, prix, description, items }) => {
             ) : (
               <X className="text-red-500 w-5 h-5 shrink-0 mt-1" />
             )}
-            <span className="text-gray-800">{item.description}</span>
+            <span className="text-gray-400">{item.description}</span>
           </li>
         ))}
       </ul>
@@ -40,7 +47,7 @@ const PricingCard = ({ titre, prix, description, items }) => {
       <button className="text-white bg-accent rounded-full px-6 py-2 font-semibold cursor-pointer hover:bg-hover transition-all duration-300 text-sm sm:text-base mt-auto">
         Choisir
       </button>
-    </div>
+    </motion.div>
   );
 };
 

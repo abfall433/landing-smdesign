@@ -1,11 +1,11 @@
 /* eslint-disable no-unused-vars */
-import image1 from "../../assets/images/P1111883.jpg"
+import image1 from "../../assets/images/P1111883.webp"
 import { motion } from "motion/react"
 
 const Hero = () => {
     const duration = 2.3
     return(
-        <header className="flex flex-col  lg:flex-row">
+        <header className="flex flex-col  lg:flex-row xl:h-screen" id="accueil">
               <div className=" flex flex-col flex-1 gap-4 px-4 lg:gap-9 lg:px-16 lg:min-h-[650px] py-8 lg:py-32 text-center lg:text-left justify-center">
                    <motion.h1 
                       initial={{ opacity: 0, x: -100 }}      
